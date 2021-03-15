@@ -13,6 +13,7 @@ namespace WinUI3Issues.IoC.Modules
         public override void Load()
         {
             this.Bind<ItemsRepeaterScrollIssueViewModel>().ToSelf().InSingletonScope();
+            this.Bind<XamlCommandBindingIconSourceIssueViewModel>().ToSelf().InSingletonScope();
         }
     }
 }

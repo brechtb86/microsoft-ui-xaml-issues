@@ -36,7 +36,8 @@ namespace WinUI3Issues
         private readonly List<(string Tag, Type Page)> _pages = new()
         {
             ("home", typeof(HomePage)),
-            ("itemsRepeaterScrollIssue", typeof(ItemsRepeaterScrollIssuePage))
+            ("itemsRepeaterScrollIssue", typeof(ItemsRepeaterScrollIssuePage)),
+            ("xamlCommandBindingIconSourceIssue", typeof(XamlCommandBindingIconSourceIssuePage))
         };
 
         private void NavView_Loaded(object sender, RoutedEventArgs e)

@@ -13,6 +13,7 @@
     <None Remove="ItemsRepeaterScrollIssuePage.xaml" />
     <None Remove="SettingsPage.xaml" />
     <None Remove="UserControls\DummyObjectControl.xaml" />
+    <None Remove="XamlCommandBindingIconSourceIssuePage.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,6 +21,12 @@
     <PackageReference Include="Microsoft.ProjectReunion" Version="0.5.0-prerelease" />
     <PackageReference Include="Ninject" Version="4.0.0-beta-0134" />
     <Manifest Include="$(ApplicationManifest)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="XamlCommandBindingIconSourceIssuePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
 
   <ItemGroup>

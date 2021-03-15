@@ -14,6 +14,7 @@
                 <NavigationViewItemSeparator/>
                 <NavigationViewItemHeader Content="Issues"/>
                 <NavigationViewItem Tag="itemsRepeaterScrollIssue" Content="ItemsRepeater Scroll Issue (re-order/remove)" />
+                <NavigationViewItem Tag="xamlCommandBindingIconSourceIssue" Content="XamlCommand Binding IconSource Issue" />
             </NavigationView.MenuItems>
            
             <Frame x:Name="ContentFrame" Padding="12,0,12,24" IsTabStop="True" NavigationFailed="ContentFrame_NavigationFailed"/>

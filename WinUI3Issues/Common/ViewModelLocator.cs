@@ -11,5 +11,6 @@ namespace WinUI3Issues.Common
     public class ViewModelLocator
     {
         public ItemsRepeaterScrollIssueViewModel ItemsRepeaterScrollIssueViewModel => IocKernel.Get<ItemsRepeaterScrollIssueViewModel>();
+        public XamlCommandBindingIconSourceIssueViewModel XamlCommandBindingIconSourceIssueViewModel => IocKernel.Get<XamlCommandBindingIconSourceIssueViewModel>();
     }
 }
