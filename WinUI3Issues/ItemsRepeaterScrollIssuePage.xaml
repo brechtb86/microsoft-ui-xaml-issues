@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="WinUI3Issues.ItemsRepeaterScrollIssuePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WinUI3Issues"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:models="using:WinUI3Issues.Models"
+    xmlns:userControls="using:WinUI3Issues.UserControls"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    DataContext="{Binding Path=ItemsRepeaterScrollIssueViewModel, Source={StaticResource ViewModelLocator}}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Text="Start scrolling" />
+        <ScrollViewer Grid.Row="1">
+            <ItemsRepeater ItemsSource="{Binding Path=DummyObjects}">
+                <ItemsRepeater.Layout>
+                    <UniformGridLayout Orientation="Horizontal" ItemsStretch="Fill" MinColumnSpacing="24" MinRowSpacing="24"></UniformGridLayout>
+                </ItemsRepeater.Layout>
+                <ItemsRepeater.ItemTemplate>
+                    <DataTemplate x:DataType="models:DummyObject">
+                        <Grid>
+                            <userControls:DummyObjectControl Title="{Binding Path=Name}"></userControls:DummyObjectControl>
+                        </Grid>
+                    </DataTemplate>
+                </ItemsRepeater.ItemTemplate>
+            </ItemsRepeater>
+        </ScrollViewer>
+    </Grid>
+</Page>

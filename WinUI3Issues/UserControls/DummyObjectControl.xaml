@@ -1,0 +1,18 @@
+﻿<UserControl
+    x:Class="WinUI3Issues.UserControls.DummyObjectControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:WinUI3Issues.UserControls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Border Height="288" Width="192" BorderThickness="1" BorderBrush="{ThemeResource TextBoxBorderThemeBrush}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" Text="{x:Bind Path=Title, Mode=OneWay}"></TextBlock>
+        </Grid>
+    </Border>
+</UserControl>
