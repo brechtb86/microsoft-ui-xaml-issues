@@ -45,9 +45,9 @@ namespace WinUI3Issues.ViewModels
             };
 
             this.PickFolderWithLabel.ExecuteRequested += async (command, args) =>
-                {
-                    // Do something
-                };
+            {
+                // Do something
+            };
         }
     }
 }

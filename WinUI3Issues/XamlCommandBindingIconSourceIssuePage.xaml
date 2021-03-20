@@ -20,18 +20,22 @@
 
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0" Margin="0,16,0,0" Orientation="Vertical">
-            <TextBlock>PickFolderWithIcon (with binding):</TextBlock>
+            <TextBlock>PickFolderWithIcon (with Binding):</TextBlock>
             <Button Command="{Binding Path=PickFolderWithIcon}" />
         </StackPanel>
         <StackPanel Grid.Row="1" Margin="0,16,0,0" Orientation="Vertical">
-            <TextBlock>PickFolderWithIcon (without binding):</TextBlock>
+            <TextBlock>PickFolderWithIcon (no Binding):</TextBlock>
             <Button>
                 <SymbolIcon Symbol="Folder" />
             </Button>
         </StackPanel>
         <StackPanel Grid.Row="2" Margin="0,16,0,0" Orientation="Vertical">
-            <TextBlock>PickFolderWithLabel (with binding):</TextBlock>
+            <TextBlock>PickFolderWithLabel (with Binding):</TextBlock>
             <Button Command="{Binding Path=PickFolderWithLabel}" />
+        </StackPanel>
+        <StackPanel Grid.Row="3" Margin="0,16,0,0" Orientation="Vertical">
+            <TextBlock>PickFolderWithIcon (with x:Bind):</TextBlock>
+            <Button Command="{x:Bind Path=PickFolderWithIcon}" />
         </StackPanel>
     </Grid>
 </Page>
