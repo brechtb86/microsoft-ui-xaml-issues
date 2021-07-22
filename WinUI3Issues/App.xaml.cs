@@ -27,7 +27,7 @@ namespace WinUI3Issues
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.
     /// </summary>
-    public partial class App : Application
+    public partial class App : Microsoft.UI.Xaml.Application
     {
         private Window _mainWindow;
 
@@ -38,23 +38,8 @@ namespace WinUI3Issues
         public App()
         {
             this.InitializeComponent();
-
-            this.Suspending += (object sender, SuspendingEventArgs e) =>
-            {
-
-            };
-
-            this.Resuming += (object sender, object e) =>
-            {
-
-            };
         }
-
-        protected override void OnActivated(IActivatedEventArgs args)
-        {
-            base.OnActivated(args);
-        }
-
+        
         /// <summary>
         /// Invoked when the application is launched normally by the end user.  Other entry points
         /// will be used such as when the application is launched to open a specific file.

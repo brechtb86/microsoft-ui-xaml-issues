@@ -2,11 +2,12 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net5.0-windows10.0.19041.0</TargetFramework>
-    <TargetPlatformMinVersion>10.0.18362.0</TargetPlatformMinVersion>
+    <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
     <RootNamespace>WinUI3Issues</RootNamespace>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <Platforms>x86;x64;arm64</Platforms>
     <RuntimeIdentifiers>win10-x86;win10-x64;win10-arm64</RuntimeIdentifiers>
+    <UseWinUI>true</UseWinUI>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="HomePage.xaml" />
@@ -17,8 +18,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.NETCore" Version="5.0.2" />
-    <PackageReference Include="Microsoft.ProjectReunion" Version="0.5.0-prerelease" />
+    <PackageReference Include="Microsoft.ProjectReunion" Version="0.8.1" />
+    <PackageReference Include="Microsoft.ProjectReunion.Foundation" Version="0.8.1" />
+    <PackageReference Include="Microsoft.ProjectReunion.WinUI" Version="0.8.1" />
     <PackageReference Include="Ninject" Version="4.0.0-beta-0134" />
     <Manifest Include="$(ApplicationManifest)" />
   </ItemGroup>
